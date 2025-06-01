@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reservations – Le Sel</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">Le Sel</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="reservations.html">Reservations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="reservations-page">
+    <h2>Book a Table</h2>
+    <p>We look forward to hosting you. Please fill out the form below and we’ll confirm your reservation shortly.</p>
+
+    <form class="reservation-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+
+      <label for="date">Date</label>
+      <input type="date" id="date" required>
+
+      <label for="time">Time</label>
+      <input type="time" id="time" required>
+
+      <label for="guests">Number of Guests</label>
+      <input type="number" id="guests" min="1" max="20" required>
+
+      <label for="message">Special Requests</label>
+      <textarea id="message" rows="4"></textarea>
+
+      <button type="submit" disabled>Submit (Coming Soon)</button>
+    </form>
+  </main>
+</body>
+</html>
